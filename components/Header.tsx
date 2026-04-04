@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      {/*Top Banner*/}
+      {/* Top Banner  */}
       <div className="top-banner">
         <div className="top-banner-items">
           <span>Lorem ipsum dolor</span>
@@ -43,7 +43,7 @@ export default function Header() {
         </div>
       </div>
 
-      {/* Header  */}
+      {/* ── Header ── */}
       <header className="header-wrapper">
         <div className="container">
           <div className="header-main">

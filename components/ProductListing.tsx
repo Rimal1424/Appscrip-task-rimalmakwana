@@ -37,9 +37,9 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
 
   return (
     <>
-      {/* Filter Controls */}
+      {/*  Filter Controls  */}
       <div className={styles.filterControls}>
-
+        
         <div className={styles.filterLeft}>
           <span className={styles.itemCount}>
             {products.length} ITEMS
@@ -77,9 +77,9 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
         </select>
       </div>
 
-      {/* Layout */}
+      {/*  Layout  */}
       <div className={styles.layoutWrapper}>
-
+        
         {/* Sidebar */}
         <div className={isSidebarVisible ? styles.sidebar : styles.sidebarHidden}>
           <SidebarFilter />
@@ -95,16 +95,18 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
 
       {/* Overlay — blocks touch scroll on mobile */}
       <div
-        className={`${styles.filterOverlay} ${isFilterDrawerOpen ? styles.filterOverlayOpen : ""
-          }`}
+        className={`${styles.filterOverlay} ${
+          isFilterDrawerOpen ? styles.filterOverlayOpen : ""
+        }`}
         onClick={() => setIsFilterDrawerOpen(false)}
         onTouchMove={(e) => e.preventDefault()}
       />
 
       {/* Drawer */}
       <div
-        className={`${styles.filterDrawer} ${isFilterDrawerOpen ? styles.filterDrawerOpen : ""
-          }`}
+        className={`${styles.filterDrawer} ${
+          isFilterDrawerOpen ? styles.filterDrawerOpen : ""
+        }`}
       >
         {/* Header */}
         <div className={styles.filterDrawerHeader}>
