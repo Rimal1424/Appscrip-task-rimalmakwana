@@ -4,13 +4,13 @@ import styles from "./Footer.module.css";
 
 export default function Footer() {
   return (
-    
+
     <footer className="footer-wrapper">
       <div className="container">
-        
+
         {/* Top Section */}
         <div className="footer-top">
-          
+
           {/* Newsletter */}
           <div className="footer-newsletter">
             <h3>BE THE FIRST TO KNOW</h3>
@@ -47,7 +47,7 @@ export default function Footer() {
 
         {/* Bottom Section */}
         <div className="footer-bottom">
-          
+
           {/* Column 1 */}
           <div className="footer-col">
             <h4>mettä muse</h4>
@@ -137,7 +137,7 @@ export default function Footer() {
 
         {/* Copyright */}
         <p className={styles.copyright}>
-          Copyright &copy; 2024 mettamuse. All rights reserved.
+          Copyright &copy; 2026 mettamuse. All rights reserved.
         </p>
       </div>
     </footer>

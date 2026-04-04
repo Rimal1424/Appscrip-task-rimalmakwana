@@ -46,14 +46,10 @@ body {
 }
 
 /* Lock scroll when mobile filter sidebar is open */
-body.filter-open,
-body.filter-open html {
+html:has(body.filter-open),
+body.filter-open {
   overflow: hidden !important;
-  position: fixed !important;
-  width: 100% !important;
-  height: 100% !important;
-  touch-action: none;
-  -webkit-overflow-scrolling: none;
+  overscroll-behavior: none !important;
 }
 
 main {

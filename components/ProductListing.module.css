@@ -97,6 +97,8 @@
 
 .filterOverlayOpen {
   display: block;
+  touch-action: none;
+  overscroll-behavior: none;
 }
 
 .filterDrawer {
@@ -112,6 +114,7 @@
   transform: translateX(-100%);
   transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
   overflow-y: auto;
+  overscroll-behavior: contain;
   box-shadow: 4px 0 24px rgba(0, 0, 0, 0.12);
 }
 
