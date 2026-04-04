@@ -1,4 +1,4 @@
-/* ─── Filter Controls Bar */
+/*  Filter Controls Bar */
 .filterControls {
   display: flex;
   justify-content: space-between;
@@ -150,7 +150,7 @@
   overflow-y: auto;
 }
 
-/*  Responsive: Large Tablet (≤1200px) */
+/*  Responsive: Large Tablet  */
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
