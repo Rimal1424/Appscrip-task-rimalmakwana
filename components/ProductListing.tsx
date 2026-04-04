@@ -11,29 +11,15 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
   const [sortOption, setSortOption] = useState("RECOMMENDED");
   const [isFilterDrawerOpen, setIsFilterDrawerOpen] = useState(false);
 
-  // Lock body scroll when mobile drawer is open (works on iOS/mobile too)
+  // Lock body scroll when mobile filter drawer is open
   useEffect(() => {
     if (isFilterDrawerOpen) {
-      const scrollY = window.scrollY;
-      document.body.style.position = "fixed";
-      document.body.style.top = `-${scrollY}px`;
-      document.body.style.width = "100%";
-      document.body.style.overflow = "hidden";
+      document.body.classList.add("filter-open");
     } else {
-      const scrollY = document.body.style.top;
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      document.body.style.overflow = "";
-      if (scrollY) {
-        window.scrollTo(0, parseInt(scrollY || "0") * -1);
-      }
+      document.body.classList.remove("filter-open");
     }
     return () => {
-      document.body.style.position = "";
-      document.body.style.top = "";
-      document.body.style.width = "";
-      document.body.style.overflow = "";
+      document.body.classList.remove("filter-open");
     };
   }, [isFilterDrawerOpen]);
 
@@ -107,12 +93,13 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
         </div>
       </div>
 
-      {/* Overlay */}
+      {/* Overlay — blocks touch scroll on mobile */}
       <div
         className={`${styles.filterOverlay} ${
           isFilterDrawerOpen ? styles.filterOverlayOpen : ""
         }`}
         onClick={() => setIsFilterDrawerOpen(false)}
+        onTouchMove={(e) => e.preventDefault()}
       />
 
       {/* Drawer */}

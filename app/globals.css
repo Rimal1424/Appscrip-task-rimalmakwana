@@ -45,6 +45,17 @@ body {
   max-width: 100vw;
 }
 
+/* Lock scroll when mobile filter sidebar is open */
+body.filter-open,
+body.filter-open html {
+  overflow: hidden !important;
+  position: fixed !important;
+  width: 100% !important;
+  height: 100% !important;
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+}
+
 main {
   width: 100%;
   overflow-x: hidden;
