@@ -37,7 +37,7 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
 
   return (
     <>
-      {/* ── Filter Controls ── */}
+      {/*  Filter Controls  */}
       <div className={styles.filterControls}>
         
         <div className={styles.filterLeft}>
@@ -77,7 +77,7 @@ export default function ProductListing({ initialProducts }: { initialProducts: P
         </select>
       </div>
 
-      {/* ── Layout ── */}
+      {/*  Layout  */}
       <div className={styles.layoutWrapper}>
         
         {/* Sidebar */}
