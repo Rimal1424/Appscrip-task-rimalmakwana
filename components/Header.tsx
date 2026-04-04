@@ -34,7 +34,7 @@ export default function Header() {
 
   return (
     <>
-      {/* ── Top Banner ── */}
+      {/* Top Banner  */}
       <div className="top-banner">
         <div className="top-banner-items">
           <span>Lorem ipsum dolor</span>
