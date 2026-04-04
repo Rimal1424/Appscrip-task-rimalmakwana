@@ -113,7 +113,7 @@ export default function Header() {
         <div className="mobile-nav-header">
           <span className="header-logo">LOGO</span>
 
-          <button onClick={closeMenu}>
+          <button onClick={closeMenu} aria-label="Close menu">
             <X size={22} />
           </button>
         </div>
