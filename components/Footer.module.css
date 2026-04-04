@@ -1,0 +1,58 @@
+/* Footer Contact Section */
+.contactSubheading {
+  margin-top: 24px;
+}
+
+.currencyRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.currencyLabel {
+  font-weight: 700;
+}
+
+.currencyNote {
+  font-size: 12px;
+  margin-top: 8px;
+}
+
+/*Social Icons */
+.socialIcons {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.socialIconWrap {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Payment Icons  */
+.paymentIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.paymentIconWrap {
+  width: 40px;
+  height: 24px;
+  background: #fff;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  Copyright */
+.copyright {
+  text-align: center;
+  margin-top: 40px;
+  color: #bbb;
+  font-size: 14px;
+}

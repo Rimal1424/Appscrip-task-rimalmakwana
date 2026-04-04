@@ -98,3 +98,13 @@
     padding-top: 8px;
   }
 }
+
+.heartBtn {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.active {
+  color: red;
+}

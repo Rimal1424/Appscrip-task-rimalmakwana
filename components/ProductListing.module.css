@@ -1,4 +1,4 @@
-/* ─── Filter Controls Bar ─────────────────────────────────── */
+/* ─── Filter Controls Bar */
 .filterControls {
   display: flex;
   justify-content: space-between;
@@ -47,7 +47,7 @@
   max-width: 180px;
 }
 
-/* ─── Mobile Filter Button (only shown on tablet/mobile) ──── */
+/*Mobile Filter Button (only shown on tablet/mobile)*/
 .mobileFilterBtn {
   display: none;
   align-items: center;
@@ -56,9 +56,9 @@
   font-weight: 700;
   color: var(--foreground);
   white-space: nowrap;
+  cursor: pointer;
 }
-
-/* ─── Layout ─────────────────────────────────────────────── */
+/*  Layout */
 .layoutWrapper {
   display: flex;
   gap: 32px;
@@ -77,7 +77,7 @@
   display: none;
 }
 
-/* ─── Product Grid ───────────────────────────────────────── */
+/* Product Grid */
 .grid {
   flex: 1;
   min-width: 0;
@@ -86,7 +86,7 @@
   gap: 20px;
 }
 
-/* ─── Mobile Filter Drawer ───────────────────────────────── */
+/*  Mobile Filter Drawer*/
 .filterOverlay {
   display: none;
   position: fixed;
@@ -147,7 +147,7 @@
   overflow-y: auto;
 }
 
-/* ─── Responsive: Large Tablet (≤1200px) ─────────────────── */
+/*  Responsive: Large Tablet (≤1200px) */
 @media (max-width: 1200px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
@@ -159,10 +159,8 @@
   }
 }
 
-/* ─── Responsive: Tablet (≤900px) ───────────────────────── */
-/* Sidebar disappears, FILTER button appears, grid stays 3-col */
+/*  Responsive: Tablet */
 @media (max-width: 900px) {
-
   .sidebar,
   .sidebarHidden {
     display: none !important;
@@ -190,7 +188,7 @@
   }
 }
 
-/* ─── Responsive: Small Tablet / Large Phone (≤680px) ────── */
+/* Responsive: Small Tablet / Large Phone  */
 @media (max-width: 680px) {
   .grid {
     grid-template-columns: repeat(2, 1fr);
@@ -207,7 +205,7 @@
   }
 }
 
-/* ─── Responsive: Mobile (≤480px) ───────────────────────── */
+/*Responsive: Mobile */
 @media (max-width: 480px) {
   .filterControls {
     gap: 8px;

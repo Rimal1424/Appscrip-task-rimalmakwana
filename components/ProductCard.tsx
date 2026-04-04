@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { Heart } from "lucide-react";
 import styles from "./ProductCard.module.css";
 
 export type Product = {
@@ -18,6 +19,8 @@ export default function ProductCard({ product }: { product: Product }) {
 
   return (
     <div className={styles.card}>
+      
+      {/* Image */}
       <div className={styles.imageWrapper}>
         <Image
           src={product.image}
@@ -27,24 +30,32 @@ export default function ProductCard({ product }: { product: Product }) {
           style={{ objectFit: "contain", padding: "20px" }}
         />
       </div>
+
+      {/* Info */}
       <div className={styles.cardInfo}>
+        
         <div style={{ flex: 1, overflow: "hidden" }}>
-          <h2 className={styles.title} title={product.title}>
+          <p className={styles.title} title={product.title}>
             {product.title}
-          </h2>
+          </p>
+
           <div className={styles.pricingInfo}>
             <span style={{ textDecoration: "none" }}>Sign in</span> or Create an account to see pricing
           </div>
         </div>
+
+        {/* Wishlist Button */}
         <button
           className={`${styles.heartBtn} ${isLiked ? styles.active : ""}`}
           onClick={() => setIsLiked(!isLiked)}
           aria-label="Toggle Wishlist"
         >
-          <svg fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-            <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
-          </svg>
+          <Heart
+            size={20}
+            fill={isLiked ? "currentColor" : "none"}
+          />
         </button>
+
       </div>
     </div>
   );
