@@ -1,4 +1,4 @@
-# 🛍️ mettä muse — Appscrip Frontend Task
+# 🛍️ Appscrip Frontend Task
 
 A responsive e-commerce product listing page built with **Next.js 16**, **React 19**, and **TypeScript** as part of the Appscrip frontend developer assessment.
 
@@ -6,8 +6,7 @@ A responsive e-commerce product listing page built with **Next.js 16**, **React 
 
 ## 🚀 Live Demo
 
-> Run locally with `npm run dev` → [http://localhost:3000](http://localhost:3000)
-
+Live Demo Link : https://appscrip-task-rimalmakwana.netlify.app
 ---
 
 ## ✨ Features
