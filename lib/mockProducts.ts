@@ -1,5 +1,29 @@
 import { Product } from "@/components/ProductCard";
 
+// Reliable fallback images from picsum.photos (used when fakestoreapi.com is unreachable)
+const picsumImages = [
+  "https://picsum.photos/seed/bag/400/400",
+  "https://picsum.photos/seed/tshirt/400/400",
+  "https://picsum.photos/seed/jacket/400/400",
+  "https://picsum.photos/seed/shirt/400/400",
+  "https://picsum.photos/seed/bracelet/400/400",
+  "https://picsum.photos/seed/ring1/400/400",
+  "https://picsum.photos/seed/ring2/400/400",
+  "https://picsum.photos/seed/earring/400/400",
+  "https://picsum.photos/seed/hdd/400/400",
+  "https://picsum.photos/seed/ssd1/400/400",
+  "https://picsum.photos/seed/ssd2/400/400",
+  "https://picsum.photos/seed/gaming/400/400",
+  "https://picsum.photos/seed/monitor1/400/400",
+  "https://picsum.photos/seed/monitor2/400/400",
+  "https://picsum.photos/seed/snowjacket/400/400",
+  "https://picsum.photos/seed/bikerjacket/400/400",
+  "https://picsum.photos/seed/raincoat/400/400",
+  "https://picsum.photos/seed/womenst1/400/400",
+  "https://picsum.photos/seed/womenst2/400/400",
+  "https://picsum.photos/seed/womenst3/400/400",
+];
+
 export const mockProducts: Product[] = [
   {
     id: 1,
@@ -8,7 +32,7 @@ export const mockProducts: Product[] = [
     description:
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/81fAn9aFDaL._AC_UY879_.jpg",
+    image: picsumImages[0],
   },
   {
     id: 2,
@@ -17,7 +41,7 @@ export const mockProducts: Product[] = [
     description:
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    image: picsumImages[1],
   },
   {
     id: 3,
@@ -26,7 +50,7 @@ export const mockProducts: Product[] = [
     description:
       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    image: picsumImages[2],
   },
   {
     id: 4,
@@ -35,7 +59,7 @@ export const mockProducts: Product[] = [
     description:
       "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on this page.",
     category: "men's clothing",
-    image: "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg",
+    image: picsumImages[3],
   },
   {
     id: 5,
@@ -44,7 +68,7 @@ export const mockProducts: Product[] = [
     description:
       "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_FMwebp_QL65_.jpg",
+    image: picsumImages[4],
   },
   {
     id: 6,
@@ -53,7 +77,7 @@ export const mockProducts: Product[] = [
     description:
       "Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_FMwebp_QL65_.jpg",
+    image: picsumImages[5],
   },
   {
     id: 7,
@@ -62,7 +86,7 @@ export const mockProducts: Product[] = [
     description:
       "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for her. Gifts to spoil your love more for special occasions.",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_FMwebp_QL65_.jpg",
+    image: picsumImages[6],
   },
   {
     id: 8,
@@ -71,7 +95,7 @@ export const mockProducts: Product[] = [
     description:
       "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
     category: "jewelery",
-    image: "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_FMwebp_QL65_.jpg",
+    image: picsumImages[7],
   },
   {
     id: 9,
@@ -80,7 +104,7 @@ export const mockProducts: Product[] = [
     description:
       "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High compatibility.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    image: picsumImages[8],
   },
   {
     id: 10,
@@ -89,7 +113,7 @@ export const mockProducts: Product[] = [
     description:
       "Easy upgrade for faster boot up, shutdown, rendering, and data transfer. Boosts burst write performance, making it ideal for typical PC workloads.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    image: picsumImages[9],
   },
   {
     id: 11,
@@ -98,7 +122,7 @@ export const mockProducts: Product[] = [
     description:
       "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootups and application launches.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/71kEqp3aZaL._AC_SX679_.jpg",
+    image: picsumImages[10],
   },
   {
     id: 12,
@@ -107,7 +131,7 @@ export const mockProducts: Product[] = [
     description:
       "Expand your PS4 gaming experience. Play games with more of what you need and want.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    image: picsumImages[11],
   },
   {
     id: 13,
@@ -116,7 +140,7 @@ export const mockProducts: Product[] = [
     description:
       "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility issues. Ideal for presentations and work.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/81QpkIctqPL._AC_SX679_.jpg",
+    image: picsumImages[12],
   },
   {
     id: 14,
@@ -125,7 +149,7 @@ export const mockProducts: Product[] = [
     description:
       "49 INCH SUPER ULTRAWIDE: Bring a new dimension to gaming with this 49-inch super ultrawide curved display featuring a 32:9 aspect ratio.",
     category: "electronics",
-    image: "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+    image: picsumImages[13],
   },
   {
     id: 15,
@@ -134,7 +158,7 @@ export const mockProducts: Product[] = [
     description:
       "Note: The Jackets is US standard size, Please choose size as your usual size. The Jackets is designed to be worn in cold weather.",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/51Y5NI-I5jL._AC_UX679_.jpg",
+    image: picsumImages[14],
   },
   {
     id: 16,
@@ -143,7 +167,7 @@ export const mockProducts: Product[] = [
     description:
       "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879-2.jpg",
+    image: picsumImages[15],
   },
   {
     id: 17,
@@ -152,7 +176,7 @@ export const mockProducts: Product[] = [
     description:
       "Lightweight perfect for trip or casual use an independent distributer of fashion riders to our customers.",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/71HblAHs1xL._AC_UY879-2.jpg",
+    image: picsumImages[16],
   },
   {
     id: 18,
@@ -161,7 +185,7 @@ export const mockProducts: Product[] = [
     description:
       "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for easy movement.",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+    image: picsumImages[17],
   },
   {
     id: 19,
@@ -170,7 +194,7 @@ export const mockProducts: Product[] = [
     description:
       "100% Polyester, Machine wash, 100% Polyester. Follow care instructions provided in the product for best results on washing.",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/51eg55uWmdL._AC_UX679_.jpg",
+    image: picsumImages[18],
   },
   {
     id: 20,
@@ -179,6 +203,6 @@ export const mockProducts: Product[] = [
     description:
       "95% COTTON, 5% SPANDEX, Size Recommendations: XS (0-2), S (4-6), M (8-10), L (12-14), XL (16-18).",
     category: "women's clothing",
-    image: "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
+    image: picsumImages[19],
   },
 ];
