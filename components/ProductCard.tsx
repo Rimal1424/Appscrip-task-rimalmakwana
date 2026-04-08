@@ -27,7 +27,7 @@ export default function ProductCard({ product }: { product: Product }) {
           alt={product.title}
           fill
           sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
-          style={{ objectFit: "contain", padding: "20px" }}
+          className={styles.productImage}
         />
       </div>
 

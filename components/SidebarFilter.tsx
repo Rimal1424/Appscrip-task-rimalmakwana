@@ -12,6 +12,15 @@ const FilterBlock = ({
   defaultOpen?: boolean;
 }) => {
   const [isOpen, setIsOpen] = useState(defaultOpen);
+  const [checked, setChecked] = useState({
+    opt1: false,
+    opt2: false,
+    opt3: false,
+  });
+
+  const handleUnselectAll = () => {
+    setChecked({ opt1: false, opt2: false, opt3: false });
+  };
 
   return (
     <div className={styles.filterSection}>
@@ -40,6 +49,7 @@ const FilterBlock = ({
       {isOpen && (
         <div className={styles.filterOptions}>
           <div
+            onClick={handleUnselectAll}
             style={{
               color: "#888",
               textDecoration: "underline",
@@ -52,15 +62,30 @@ const FilterBlock = ({
           </div>
 
           <label className={styles.optionLabel}>
-            <input type="checkbox" /> Option 1
+            <input
+              type="checkbox"
+              checked={checked.opt1}
+              onChange={(e) => setChecked({ ...checked, opt1: e.target.checked })}
+            />{" "}
+            Option 1
           </label>
 
           <label className={styles.optionLabel}>
-            <input type="checkbox" /> Option 2
+            <input
+              type="checkbox"
+              checked={checked.opt2}
+              onChange={(e) => setChecked({ ...checked, opt2: e.target.checked })}
+            />{" "}
+            Option 2
           </label>
 
           <label className={styles.optionLabel}>
-            <input type="checkbox" /> Option 3
+            <input
+              type="checkbox"
+              checked={checked.opt3}
+              onChange={(e) => setChecked({ ...checked, opt3: e.target.checked })}
+            />{" "}
+            Option 3
           </label>
         </div>
       )}
