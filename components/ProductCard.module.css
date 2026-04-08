@@ -98,13 +98,16 @@
     font-size: 12px;
     margin-bottom: 4px;
   }
+
   .pricingInfo {
     font-size: 11px;
   }
+
   .heartBtn svg {
     width: 18px;
     height: 18px;
   }
+
   .cardInfo {
     padding-top: 8px;
   }

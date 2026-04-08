@@ -90,19 +90,19 @@ ul {
 /* ─── Top Banner ─────────────────────────────────────────── */
 .top-banner {
   background-color: #000;
-  color: #fff;
+  color: #eb4c60;
   font-size: 12px;
-  padding: 8px 20px;
+  padding: 10px 20px;
 }
 
-.top-banner span {
+.top-banner-item {
   display: flex;
   align-items: center;
   gap: 8px;
   white-space: nowrap;
 }
 
-.top-banner .icon {
+.top-banner svg {
   width: 16px;
   height: 16px;
   flex-shrink: 0;

@@ -9,6 +9,7 @@ import {
   Heart,
   ShoppingCart,
   User,
+  LayoutGrid,
 } from "lucide-react";
 
 const NAV_LINKS = [
@@ -37,9 +38,15 @@ export default function Header() {
       {/* ── Top Banner ── */}
       <div className="top-banner">
         <div className="top-banner-items">
-          <span>Lorem ipsum dolor</span>
-          <span className="top-banner-desktop-only">Lorem ipsum dolor</span>
-          <span className="top-banner-desktop-only">Lorem ipsum dolor</span>
+          <span className="top-banner-item">
+            <LayoutGrid size={14} /> Lorem ipsum dolor
+          </span>
+          <span className="top-banner-item top-banner-desktop-only">
+            <LayoutGrid size={14} /> Lorem ipsum dolor
+          </span>
+          <span className="top-banner-item top-banner-desktop-only">
+            <LayoutGrid size={14} /> Lorem ipsum dolor
+          </span>
         </div>
       </div>
 
