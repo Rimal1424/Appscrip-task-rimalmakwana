@@ -1,28 +1,35 @@
 import { Product } from "@/components/ProductCard";
 
-// Reliable fallback images from picsum.photos (used when fakestoreapi.com is unreachable)
-const picsumImages = [
-  "https://picsum.photos/seed/bag/400/400",
-  "https://picsum.photos/seed/tshirt/400/400",
-  "https://picsum.photos/seed/jacket/400/400",
-  "https://picsum.photos/seed/shirt/400/400",
-  "https://picsum.photos/seed/bracelet/400/400",
-  "https://picsum.photos/seed/ring1/400/400",
-  "https://picsum.photos/seed/ring2/400/400",
-  "https://picsum.photos/seed/earring/400/400",
-  "https://picsum.photos/seed/hdd/400/400",
-  "https://picsum.photos/seed/ssd1/400/400",
-  "https://picsum.photos/seed/ssd2/400/400",
-  "https://picsum.photos/seed/gaming/400/400",
-  "https://picsum.photos/seed/monitor1/400/400",
-  "https://picsum.photos/seed/monitor2/400/400",
-  "https://picsum.photos/seed/snowjacket/400/400",
-  "https://picsum.photos/seed/bikerjacket/400/400",
-  "https://picsum.photos/seed/raincoat/400/400",
-  "https://picsum.photos/seed/womenst1/400/400",
-  "https://picsum.photos/seed/womenst2/400/400",
-  "https://picsum.photos/seed/womenst3/400/400",
-];
+// Curated Unsplash images matched to each specific product
+const productImages = {
+  // Men's Clothing
+  backpack: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&h=400&fit=crop&auto=format",
+  mensShirt: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=400&h=400&fit=crop&auto=format",
+  mensJacket: "https://images.unsplash.com/photo-1544022613-e87ca75a784a?w=400&h=400&fit=crop&auto=format",
+  mensSlimFit: "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=400&h=400&fit=crop&auto=format",
+
+  // Jewelery
+  bracelet: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?w=400&h=400&fit=crop&auto=format",
+  goldRing: "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=400&h=400&fit=crop&auto=format",
+  diamondRing: "https://images.unsplash.com/photo-1602173574767-37ac01994b2a?w=400&h=400&fit=crop&auto=format",
+  earrings: "https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?w=400&h=400&fit=crop&auto=format",
+
+  // Electronics
+  hardDrive: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=400&fit=crop&auto=format",
+  ssd1: "https://images.unsplash.com/photo-1600348712270-5af9e3d0f7dc?w=400&h=400&fit=crop&auto=format",
+  ssd2: "https://images.unsplash.com/photo-1628556270448-4d4e4148e1b1?w=400&h=400&fit=crop&auto=format",
+  gamingDrive: "https://images.unsplash.com/photo-1592853625511-ad8378aa2f22?w=400&h=400&fit=crop&auto=format",
+  monitor1: "https://images.unsplash.com/photo-1527443224154-c4a573d5e6d1?w=400&h=400&fit=crop&auto=format",
+  monitor2: "https://images.unsplash.com/photo-1542393545-10f5cde2c810?w=400&h=400&fit=crop&auto=format",
+
+  // Women's Clothing
+  snowJacket: "https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=400&h=400&fit=crop&auto=format",
+  bikerJacket: "https://images.unsplash.com/photo-1551028719-00167b16eac5?w=400&h=400&fit=crop&auto=format",
+  rainJacket: "https://images.unsplash.com/photo-1504198322253-cfa87a0ff25f?w=400&h=400&fit=crop&auto=format",
+  womenTop1: "https://images.unsplash.com/photo-1434389677669-e08b4cac3105?w=400&h=400&fit=crop&auto=format",
+  womenTop2: "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=400&h=400&fit=crop&auto=format",
+  womenTshirt: "https://images.unsplash.com/photo-1583744946564-b52ac1c389c8?w=400&h=400&fit=crop&auto=format",
+};
 
 export const mockProducts: Product[] = [
   {
@@ -32,7 +39,7 @@ export const mockProducts: Product[] = [
     description:
       "Your perfect pack for everyday use and walks in the forest. Stash your laptop (up to 15 inches) in the padded sleeve, your everyday",
     category: "men's clothing",
-    image: picsumImages[0],
+    image: productImages.backpack,
   },
   {
     id: 2,
@@ -41,7 +48,7 @@ export const mockProducts: Product[] = [
     description:
       "Slim-fitting style, contrast raglan long sleeve, three-button henley placket, light weight & soft fabric for breathable and comfortable wearing.",
     category: "men's clothing",
-    image: picsumImages[1],
+    image: productImages.mensShirt,
   },
   {
     id: 3,
@@ -50,7 +57,7 @@ export const mockProducts: Product[] = [
     description:
       "great outerwear jackets for Spring/Autumn/Winter, suitable for many occasions, such as working, hiking, camping, mountain/rock climbing, cycling, traveling or other outdoors.",
     category: "men's clothing",
-    image: picsumImages[2],
+    image: productImages.mensJacket,
   },
   {
     id: 4,
@@ -59,7 +66,7 @@ export const mockProducts: Product[] = [
     description:
       "The color could be slightly different between on the screen and in practice. / Please note that body builds vary by person, therefore, detailed size information should be reviewed below on this page.",
     category: "men's clothing",
-    image: picsumImages[3],
+    image: productImages.mensSlimFit,
   },
   {
     id: 5,
@@ -68,7 +75,7 @@ export const mockProducts: Product[] = [
     description:
       "From our Legends Collection, the Naga was inspired by the mythical water dragon that protects the ocean's pearl.",
     category: "jewelery",
-    image: picsumImages[4],
+    image: productImages.bracelet,
   },
   {
     id: 6,
@@ -77,7 +84,7 @@ export const mockProducts: Product[] = [
     description:
       "Satisfaction Guaranteed. Return or exchange any order within 30 days. Designed and sold by Hafeez Center in the United States.",
     category: "jewelery",
-    image: picsumImages[5],
+    image: productImages.goldRing,
   },
   {
     id: 7,
@@ -86,7 +93,7 @@ export const mockProducts: Product[] = [
     description:
       "Classic Created Wedding Engagement Solitaire Diamond Promise Ring for her. Gifts to spoil your love more for special occasions.",
     category: "jewelery",
-    image: picsumImages[6],
+    image: productImages.diamondRing,
   },
   {
     id: 8,
@@ -95,7 +102,7 @@ export const mockProducts: Product[] = [
     description:
       "Rose Gold Plated Double Flared Tunnel Plug Earrings. Made of 316L Stainless Steel",
     category: "jewelery",
-    image: picsumImages[7],
+    image: productImages.earrings,
   },
   {
     id: 9,
@@ -104,7 +111,7 @@ export const mockProducts: Product[] = [
     description:
       "USB 3.0 and USB 2.0 Compatibility Fast data transfers Improve PC Performance High compatibility.",
     category: "electronics",
-    image: picsumImages[8],
+    image: productImages.hardDrive,
   },
   {
     id: 10,
@@ -113,7 +120,7 @@ export const mockProducts: Product[] = [
     description:
       "Easy upgrade for faster boot up, shutdown, rendering, and data transfer. Boosts burst write performance, making it ideal for typical PC workloads.",
     category: "electronics",
-    image: picsumImages[9],
+    image: productImages.ssd1,
   },
   {
     id: 11,
@@ -122,7 +129,7 @@ export const mockProducts: Product[] = [
     description:
       "3D NAND flash are applied to deliver high transfer speeds Remarkable transfer speeds that enable faster bootups and application launches.",
     category: "electronics",
-    image: picsumImages[10],
+    image: productImages.ssd2,
   },
   {
     id: 12,
@@ -131,7 +138,7 @@ export const mockProducts: Product[] = [
     description:
       "Expand your PS4 gaming experience. Play games with more of what you need and want.",
     category: "electronics",
-    image: picsumImages[11],
+    image: productImages.gamingDrive,
   },
   {
     id: 13,
@@ -140,7 +147,7 @@ export const mockProducts: Product[] = [
     description:
       "21. 5 inches Full HD (1920 x 1080) widescreen IPS display And Radeon free Sync technology. No compatibility issues. Ideal for presentations and work.",
     category: "electronics",
-    image: picsumImages[12],
+    image: productImages.monitor1,
   },
   {
     id: 14,
@@ -149,7 +156,7 @@ export const mockProducts: Product[] = [
     description:
       "49 INCH SUPER ULTRAWIDE: Bring a new dimension to gaming with this 49-inch super ultrawide curved display featuring a 32:9 aspect ratio.",
     category: "electronics",
-    image: picsumImages[13],
+    image: productImages.monitor2,
   },
   {
     id: 15,
@@ -158,7 +165,7 @@ export const mockProducts: Product[] = [
     description:
       "Note: The Jackets is US standard size, Please choose size as your usual size. The Jackets is designed to be worn in cold weather.",
     category: "women's clothing",
-    image: picsumImages[14],
+    image: productImages.snowJacket,
   },
   {
     id: 16,
@@ -167,7 +174,7 @@ export const mockProducts: Product[] = [
     description:
       "100% POLYURETHANE(shell) 100% POLYESTER(lining) 75% POLYESTER 25% COTTON (SWEATER), Faux leather material for style and comfort",
     category: "women's clothing",
-    image: picsumImages[15],
+    image: productImages.bikerJacket,
   },
   {
     id: 17,
@@ -176,7 +183,7 @@ export const mockProducts: Product[] = [
     description:
       "Lightweight perfect for trip or casual use an independent distributer of fashion riders to our customers.",
     category: "women's clothing",
-    image: picsumImages[16],
+    image: productImages.rainJacket,
   },
   {
     id: 18,
@@ -185,7 +192,7 @@ export const mockProducts: Product[] = [
     description:
       "95% RAYON 5% SPANDEX, Made in USA or Imported, Do Not Bleach, Lightweight fabric with great stretch for easy movement.",
     category: "women's clothing",
-    image: picsumImages[17],
+    image: productImages.womenTop1,
   },
   {
     id: 19,
@@ -194,7 +201,7 @@ export const mockProducts: Product[] = [
     description:
       "100% Polyester, Machine wash, 100% Polyester. Follow care instructions provided in the product for best results on washing.",
     category: "women's clothing",
-    image: picsumImages[18],
+    image: productImages.womenTop2,
   },
   {
     id: 20,
@@ -203,6 +210,6 @@ export const mockProducts: Product[] = [
     description:
       "95% COTTON, 5% SPANDEX, Size Recommendations: XS (0-2), S (4-6), M (8-10), L (12-14), XL (16-18).",
     category: "women's clothing",
-    image: picsumImages[19],
+    image: productImages.womenTshirt,
   },
 ];
