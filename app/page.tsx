@@ -1,5 +1,5 @@
 import ProductListing from "@/components/ProductListing";
-import { getProducts } from "@/lib/api";
+import { mockProducts } from "@/lib/mockProducts";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -7,8 +7,8 @@ export const metadata: Metadata = {
   description: "Explore our latest products at mettä muse.",
 };
 
-export default async function Home() {
-  const products = await getProducts();
+export default function Home() {
+  const products = mockProducts;
 
   // 1. JSON-LD Schema Settings (SEO requirement)
   const jsonLd = {
